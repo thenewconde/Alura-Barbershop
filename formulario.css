@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(2, 15, 30, 0.73);
+    width: 97%;
+    margin-left: 1.5%;
+}
+
+#menu{
+    background-color: #0077ff;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+/*Menu-base*/
+}
+
+nav a{
+    font-weight: bold; /*Negrita*/
+    text-decoration: none; 
+    text-transform: uppercase; /*Mayuscula*/
+    color: rgb(2, 186, 2);   
+    /*Eliminar y añadir cosas en la etiqueta de link*/
+}
+nav{
+    position: absolute;
+    top: 30%;
+    font-size: 20px;
+    right: 10%;
+    border-radius: 10px;
+    /*Este code usa propiedades para hacer un menu flotante*/
+    /*Absolute perimite mover un elemento donde sea*/
+}
+
+nav a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+/*hover captura el movimiento del mouse, osea del usuario*/
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: grey;
+    cursor: pointer;
+    margin-left: 8px;
+
+}
+
+#logo{
+    width: 100px;
+    margin-left: 25%;
+    height: 150px;
+    display:inline-block;
+    
+    
+}
+
+    
+
+main{
+    width: 60%;
+    background-color: rgb(216, 225, 225);
+    position: relative;
+    margin-left: 30%;
+    text-align: center;
+}
+form, input{
+    padding-top: 20px;
+    text-align: center;
+    
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.padron form textarea{
+    display: block;
+    margin: 0 0 20px;
+    width: 50%;
+    background-color: #929191;
+    padding: 5px 15px;
+}
+
+
+.copy{
+    color: aliceblue;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.test{
+    color: #0077ff;
+    padding-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.horario{
+    font-size: 20px;
+    padding: 10px;
+    background: gold;
+}
+#horario{
+    color: #0077ff;
+    font-size: 18px;
+}
+
+.enviar{
+    width: 30%;
+    padding: 20px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    background: blue;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 50px;
+}
+/* transicion hace el cambio (tiempo / propiedad 
+cursor pointer cambia la flecha del mouse por la manita
+transform(hace algun cambio en la vara) en este caso (scale) aumenta su tamaño 
+rotate = hace rotacion (necesita # y la palabra deg)
+par que haga las dos funciones (scale & rotate) deben quedar en la misma linea sino el navegador tomara el primer transform
+*/
+
+.enviar:hover{
+    background: #0d6efd;
+    transform: scale(1.2) rotate(360deg);
+    
+}
+
+table{
+    text-align: center;
+    margin: 50px 200px;
+    
+}
+td, th{
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+thead{
+    background: gray;
+    color: white;
+    font-weight: bold;
+}
+
+
+footer{
+    text-align: center;
+    background: url(./banner/bg.jpg);
+    padding: 10px;
+    
+}
+/*url() podemos poner una imagen como fondo */
+
+footer img{
+    width: 10%;
+    height: 150px;
+}
+footer p{
+    color: tomato;
+}

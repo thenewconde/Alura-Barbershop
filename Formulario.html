@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu">
+        <img id="logo" src="./banner/logo.png" alt="">
+        <nav>
+    <ul>
+        
+        <li><a href="./Index - BarberiaAlura.html"> Inicio </a></li>
+        <li><a href="./productos.html"> Servicios </a></li>
+        <li><a href="./Formulario.html"> Citas</a></li>
+    </ul>
+        </nav>
+    </div>
+    </header>
+
+
+    <main>
+        <form>
+            <label for="nombreApellido">Nombre Y Apellido</label>
+            <input type="text" name="" id="nombreApellido" class="padron"  placeholder="Steven" required> <!-- required para que el campo sea requerido, debe ir de ultimo -->
+                <br><br>
+
+            <label for="correo">E-mail</label>
+            <input type="text" name="" id="correo" class="padron" placeholder="Steven@gmail.com" required >
+            <br><br>
+
+            <label for="celular">Celular</label>
+            <input type="text" name="" id="celular" class="padron" placeholder="8888 8888" required>
+            <br><br>
+            <label for="msj">Mensaje</label>
+            <textarea for="msj" id="" cols="30" rows="10"></textarea>
+
+            <!-- label es el texto, input es la accion
+            for del label se correlaciona con el id del input 
+            al utilizar la propiedad name solo se puede mantener seleccionado un item, los otros se anulan,
+        asi se hace una sola vez la verificacion-->
+           
+        <fielset>
+                <legend class="test">Como le gustaria que lo contactemos</legend>
+
+                <label for="radio-mail"><input type="radio" name="contacto" id="radio-mail" value="mail">Email</label>
+
+                <label for="radio-tel"><input type="radio" name="contacto" id="radio-tel" value="tel">Telefono</label>
+                
+                <label for="radio-wa"><input type="radio" name="contacto" id="radio-wa" value="wa" checked>Whatsapp</label>
+                
+            </fielset>
+            
+            <div>
+                <table>
+        
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8 - 12</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8 - 6h</td>
+                   </tr>
+        
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8 - 6h</td>
+                   </tr>
+                </tbody>
+                </table>
+                
+            <fieldset class="horario">En cual horario prefiere ser atendido</fieldset>
+            <select name="" id="horario">
+                <option value="">Mañana</option>
+                <option value="">Tarde</option>
+                <option value="">Noche</option>
+            
+            </select>
+            </div>
+                        <!-- La etiueta select sirve para hacer una lista y seleccionar un campo -->
+                        <!-- Option es Para crear los ítems seleccionables de un <select> -->
+
+            <label style="margin: 20px;"><input type="checkbox" name="" id="" checked>Le gustaria recibir las novedades de Alura
+                BarberShop</label>
+            <!-- con el checkbox se hace un check -->
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <img src="./banner/logo-blanco.png" alt="">
+        <p>&copy Alura BarberShop 2023</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+*{
+    padding: auto;
+    margin-top: 20px;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px;
+    border-radius: 22px;
+}
+
+body{
+    border: 1px solid rgb(0, 255, 0);
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 22px;
+    box-shadow: 0px 15px 5px 9px rgb(0, 128, 255);
+    
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(2, 15, 30, 0.73);
+    margin-top: 1%;
+}
+
+/* 
+Necesita los atributos border y border radius
+box shadow 0px 0px: define la posición horizontal y vertical de la sombra.
+10px: define el desenfoque de la sombra.
+5px: define el tamaño de la sombra.
+rgba(0, 0, 0, 0.3): define el color y la opacidad de la sombra. En este caso, se utiliza un color negro con una opacidad del 30%.
+ */
+
+
+.negrita{
+    font-style: italic;
+    font-style: unset;
+    font-size: 19px;
+    color: #777f49;
+}
+
+#title-center{
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    text-align: center;
+    color: #0077ff;
+    margin: 30px 10px;
+}
+
+span{
+    color: rgb(2, 2, 53);
+
+}
+
+#banner{
+   width: 100; 
+   padding: 0;
+   margin: 0 -20px;
+   height: 200px;
+}
+
+nav li{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position:relative;
+    display: inline;
+    font-size: 20px;
+    
+    /*Display me sirven para decirle que haga inline y position para decirle que se mantenga en la misma zona*/
+}
+nav li a{
+    text-decoration: none;
+    border: 1px solid rgb(0,255,0);
+    border-radius: 10px;
+    padding: 5px;
+    color: #00bfff;
+    font-weight: bold;
+    
+}
+
+.boton{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.boton:hover{
+    transform: scale(1.5);
+
+}
+
+nav li a:active{
+    color: green;
+}
+
+nav{
+    margin: 30px;
+}
+
+.item{
+    font-size: italic;
+    display: block;
+    background-color: #a2bd0e;
+    padding: 10px;
+    cursor: pointer; /*Activa el bottom al pasar cursor*/
+    text-align: center;
+    margin: 5px;
+    border: 1px solid #777f49;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 5px #777f49;
+    
+}
+
+.Diferenciales{
+    background: #5b95df63;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    display: inline-block;
+    vertical-align:top; /*Posiciona un item en vertical*/
+    width: 35%;
+    
+}
+
+#difIMG{
+    width: 50%;
+
+}
+
+div h2{
+    padding: 20px;
+}
+
+.section span{
+    font-size: large;
+    white-space: pre-wrap; /*Alinea un texto usando los espacios */
+    padding-top: 10px;
+}
+
+#mision{
+    border: 2px solid #0077ff;
+    white-space: pre-wrap;
+    border: 2px solid grey;
+    border-radius: 0px;
+    padding: 3px;
+    font-size: 30px;
+    color: #5ba1b8;
+
+}
+
+.section{
+    width: 90%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+footer{
+    top: 1%;
+    background-color: #5b95df63;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    color: aquamarine;
+    font-size: small;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 15px #5b95df63;
+}
